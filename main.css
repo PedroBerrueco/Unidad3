@@ -1,0 +1,218 @@
+/* Estilo de la cabecera */
+.cabecera {
+    padding: 20px; 
+    text-align: center;
+    background: rgba(73, 55, 132, 0.7) ; 
+    color: white; 
+  }
+  .cabecera h1{
+    color: rgb(30, 74, 30);
+    font-size: 120px;
+  }
+  .cabecera h2{
+    font-size: 40px;
+  }
+  .cabecera p{
+    font-size: 12px;
+  }
+
+  /* Estilo de la barra de navegación/menus */
+@media screen and (max-width: 1400px){
+    .menus{
+        display: none;
+    }
+    .cabecera h1 {
+        font-size: medium;
+    }
+    .cabecera h2 {
+        font-size: small;
+    }
+
+    
+}
+.menus {
+    background: tomato;
+    text-align: center;
+    padding: 0.1%;
+    color: yellow;
+
+}
+.menus h3 {
+    animation-duration: 5s;
+    animation-name: slidein;
+  }
+  
+@keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 180%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 50%;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+   }
+
+/*Estilo del elemento principal */
+.principal {  
+    display: flex; 
+    background-color: rgb(90, 125, 114);
+    text-align: center;
+    }
+
+
+/* Columna de la columna izquierda*/
+.colum1 {
+    flex: 35%; /*ocupará un 35% */
+    background-color: rgb(90, 125, 114);
+    padding: 20px;
+    }
+/* Estilo de los enlaces de la columna1 */
+.colum1 a {
+    color: white; /*los enlaces los ponemos en blanco*/
+    padding: 40px 40px;
+    }
+/* cambiamos el color al pasar el ratón */
+.colum1 a:hover {
+    background-color: rgb(27, 88, 77); /*ponemos el color del fondo casi blanco*/
+    }
+      
+
+.redes {
+        padding: 40px;
+        text-align: center;
+    }
+.comentario1 {
+        display:flex;
+        padding: 10px;
+        text-align: center;   
+    }
+.comentario11{
+    flex:20%;
+}
+.comentario12{
+    flex:80%;
+}
+
+.comentario2 {
+    display:flex;
+    padding: 10px;
+    text-align: center;    
+}
+.comentario21{
+    flex:20%;
+}
+.comentario22{
+    flex:80%;
+}
+
+.comentario3 {
+    display:flex;
+    padding: 10px;
+    text-align: center;    
+}
+.comentario31{
+flex:20%;
+}
+.comentario32{
+    flex:80%;
+}
+
+
+
+
+
+/* Estilo de la Columna derecha */
+.colum2 {
+    display: flex;
+    flex-direction: column;
+    flex: 65%;
+    background-color: rgb(42, 86, 76);
+    padding: 10px;
+    }
+
+.seccion1{
+    flex: 50%;
+    display: flex;
+}
+.trio{
+    flex: 33%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.trio .imagen:hover {
+    background-color: aquamarine;
+    color: red;
+}
+.imagen{
+    color: black;
+    text-align: center; 
+    flex: 20%;
+    padding: 20px;
+    
+}
+
+.titulo{
+    flex: 10%;
+    padding: 5px;
+    color:aliceblue;
+}
+.sinopsis{
+    
+    flex: 70%;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5em;
+}
+.seccion2{
+    flex: 50%;
+    display: flex;
+    color: aliceblue;
+}
+.banner{
+    padding: 40px;
+    flex:50%;
+}
+.cambiaimg{
+    padding: 40px;
+    flex:50%;
+}
+
+
+/* Pie */
+.pie {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background: rgba(73, 55, 132, 0.7);
+    color: white;
+    }
+.left {
+        flex: 15%;
+        padding: 5px;
+    }
+.letf1 {
+        flex: 55%;
+        padding: 50px;
+    }
+.right1 {
+        flex: 15%;
+        padding: 5px;
+    }
+.right {
+        flex: 15%;
+        padding: 5px;
+    }
+
+@media screen and (max-width: 800px) {
+        .principal, .cabecera, .pie {   
+          flex-direction: column;
+        }
+}
